@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- REPLACE: Update the name and description below before publishing. -->
+    <title>Jordan | Endpoint Support &amp; Homelab Infrastructure</title>
+    <meta
+      name="description"
+      content="IT portfolio connecting professional Windows endpoint troubleshooting with hands-on networking, virtualization, and security projects built in a home lab."
+    />
+    <meta name="theme-color" content="#071225" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jordan | Endpoint Support &amp; Homelab Infrastructure" />
+    <meta
+      property="og:description"
+      content="Professional endpoint troubleshooting at work and practical infrastructure projects built at home."
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Back to the top">
+          <span class="brand-mark" aria-hidden="true">J</span>
+          <span class="brand-copy">
+            <strong>JORDAN</strong>
+            <small>SUPPORT + INFRASTRUCTURE</small>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#skills">Toolkit</a>
+          <a href="#projects">Home Lab</a>
+          <a href="#architecture">Architecture</a>
+          <a class="nav-cta" href="#contact">Let's connect</a>
+        </nav>
+
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation">Menu</summary>
+          <nav aria-label="Mobile navigation">
+            <a href="#work">Work</a>
+            <a href="#skills">Toolkit</a>
+            <a href="#projects">Home Lab</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </details>
+      </header>
+
+      <main id="main-content">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Endpoint support at work · Infrastructure at home</p>
+            <h1 id="hero-title">
+              I troubleshoot systems at work.
+              <span>I build them at home.</span>
+            </h1>
+            <p class="hero-intro">
+              I support Windows endpoints by tracing connectivity, service, certificate, proxy,
+              firewall, and remote-access issues to their source. Outside of work, I run a Proxmox
+              homelab where I build segmented networks, secure VPN access, Windows Server services,
+              and the automation that ties it together.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">What I do at work <span aria-hidden="true">↘</span></a>
+              <!-- REPLACE: Add your actual resume file to the folder and rename the href if needed. -->
+              <a class="button button-secondary" href="resume.pdf">Download résumé <span aria-hidden="true">↓</span></a>
+            </div>
+
+            <dl class="hero-stats" aria-label="Portfolio highlights">
+              <div>
+                <dt>Windows</dt>
+                <dd>Endpoint support</dd>
+              </div>
+              <div>
+                <dt>DNS → TLS</dt>
+                <dd>Connection-path checks</dd>
+              </div>
+              <div>
+                <dt>3 Networks</dt>
+                <dd>Home lab design</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-visual" aria-label="Simplified troubleshooting workflow">
+            <div class="visual-glow"></div>
+            <div class="console-window">
+              <div class="console-bar">
+                <span></span><span></span><span></span>
+                <p>support-workflow.log</p>
+              </div>
+
+              <div class="topology">
+                <div class="topology-node node-internet">
+                  <span class="node-icon">01</span>
+                  <div><small>START</small><strong>Issue reported</strong></div>
+                  <span class="node-state">TRIAGE</span>
+                </div>
+                <div class="topology-line"></div>
+                <div class="topology-node node-firewall">
+                  <span class="node-icon">02</span>
+                  <div><small>METHOD</small><strong>Isolate the layer</strong></div>
+                  <span class="node-state">VERIFY</span>
+                </div>
+                <div class="topology-line"></div>
+
+                <div class="topology-branches">
+                  <div class="branch-card">
+                    <small>NETWORK</small>
+                    <strong>DNS + TCP</strong>
+                    <span>Resolution · Route · Port</span>
+                  </div>
+                  <div class="branch-card branch-card-accent">
+                    <small>ENDPOINT</small>
+                    <strong>Windows</strong>
+                    <span>Services · Proxy · Firewall</span>
+                  </div>
+                  <div class="branch-card">
+                    <small>TRUST</small>
+                    <strong>TLS + Access</strong>
+                    <span>Certificates · Remote support</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="console-footer">
+                <span><i></i> reproduce</span>
+                <span><i></i> verify</span>
+                <span><i></i> document</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="signal-strip" aria-label="Core focus areas">
+          <p>WINDOWS SUPPORT</p><span>◆</span>
+          <p>REMOTE TROUBLESHOOTING</p><span>◆</span>
+          <p>DNS + TCP/IP</p><span>◆</span>
+          <p>POWERSHELL</p><span>◆</span>
+          <p>PROXMOX + PFSENSE</p><span>◆</span>
+          <p>WIREGUARD</p>
+        </section>
+
+        <section class="section about-section" id="work" aria-labelledby="work-title">
+          <div class="section-heading">
+            <p class="section-kicker">01 / What I do at work</p>
+            <h2 id="work-title">I help people get unstuck and find the technical reason why.</h2>
+          </div>
+
+          <div class="about-content">
+            <p class="about-lead">
+              My day-to-day work is endpoint troubleshooting: understanding what a user is seeing,
+              reproducing the issue, checking the full connection path, and turning the result into
+              either a verified fix or a clean technical handoff.
+            </p>
+            <div class="about-columns">
+              <div class="work-column">
+                <h3>What that looks like</h3>
+                <ul class="work-list">
+                  <li>Support Windows endpoints through guided and remote troubleshooting.</li>
+                  <li>Check services, processes, event information, system time, and local configuration.</li>
+                  <li>Trace DNS resolution, TCP reachability, proxy settings, firewall behavior, and routes.</li>
+                  <li>Review certificate and TLS conditions when trust or encrypted connections fail.</li>
+                </ul>
+              </div>
+              <div class="work-column">
+                <h3>What I deliver</h3>
+                <ul class="work-list">
+                  <li>A calm, understandable path for the person dealing with the issue.</li>
+                  <li>Evidence that separates endpoint, network, access, and service-side failures.</li>
+                  <li>Clear notes, tests performed, results, and reproducible next steps.</li>
+                  <li>Focused escalation when the fix depends on another team or environment owner.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="principles" aria-label="Troubleshooting approach">
+              <article>
+                <span>01</span>
+                <h3>Triage the impact</h3>
+                <p>Start with the user, the symptom, what changed, and the scope of the failure.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Isolate the layer</h3>
+                <p>Test from name resolution through the endpoint, network path, trust, and service.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Close the loop</h3>
+                <p>Verify the result, explain it plainly, and leave useful context for what comes next.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="section-kicker">02 / Professional toolkit</p>
+              <h2 id="skills-title">The layers I work through every day.</h2>
+            </div>
+            <p class="section-note">A support-focused toolkit backed by deeper infrastructure practice at home.</p>
+          </div>
+
+          <div class="skill-grid">
+            <article class="skill-card">
+              <div class="skill-card-top">
+                <span class="skill-number">01</span>
+                <span class="skill-symbol" aria-hidden="true">⌁</span>
+              </div>
+              <h3>Endpoint Support</h3>
+              <p>Working directly with users and Windows systems to reproduce issues and restore normal operation.</p>
+              <ul class="tag-list">
+                <li>Windows</li><li>Remote support</li><li>Services</li><li>Processes</li>
+                <li>Event information</li><li>Configuration</li><li>User communication</li>
+              </ul>
+            </article>
+
+            <article class="skill-card featured-skill">
+              <div class="skill-card-top">
+                <span class="skill-number">02</span>
+                <span class="skill-symbol" aria-hidden="true">▦</span>
+              </div>
+              <h3>Network-Path Diagnostics</h3>
+              <p>Following a failed connection across the dependencies between an endpoint and a service.</p>
+              <ul class="tag-list">
+                <li>DNS</li><li>TCP/IP</li><li>Ports</li><li>Routes</li>
+                <li>Proxy</li><li>Firewall</li><li>Connectivity testing</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-card-top">
+                <span class="skill-number">03</span>
+                <span class="skill-symbol" aria-hidden="true">◇</span>
+              </div>
+              <h3>Access &amp; Trust</h3>
+              <p>Checking the controls and trust relationships that sit between a user and a protected service.</p>
+              <ul class="tag-list">
+                <li>Remote access</li><li>TLS</li><li>Certificates</li><li>Authentication</li>
+                <li>Permissions</li><li>Least privilege</li><li>System time</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-card-top">
+                <span class="skill-number">04</span>
+                <span class="skill-symbol" aria-hidden="true">&gt;_</span>
+              </div>
+              <h3>Documentation &amp; Automation</h3>
+              <p>Making troubleshooting repeatable and making the outcome useful to the next person.</p>
+              <ul class="tag-list">
+                <li>PowerShell</li><li>Reproduction steps</li><li>Technical notes</li><li>JSON reporting</li>
+                <li>Verification</li><li>Escalation context</li><li>Runbooks</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="section-kicker">03 / Home lab projects</p>
+              <h2 id="projects-title">Where I turn theory into operating experience.</h2>
+            </div>
+            <p class="section-note">Personal infrastructure designed, built, broken, tested, and documented at home.</p>
+          </div>
+
+          <div class="projects-list">
+            <article class="project project-featured">
+              <div class="project-index"><span>01</span><small>FEATURED BUILD</small></div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span>INFRASTRUCTURE</span><span>NETWORKING</span><span>SECURITY</span>
+                </div>
+                <h3>Segmented Proxmox Homelab</h3>
+                <p class="project-summary">
+                  Designed a virtualization environment around an i9 Proxmox host, with pfSense
+                  controlling traffic between the home network, management services, lab systems,
+                  and a dedicated jumpbox network.
+                </p>
+                <div class="project-details">
+                  <div><small>CHALLENGE</small><p>Keep infrastructure manageable without exposing the rest of the home network.</p></div>
+                  <div><small>APPROACH</small><p>Path-based Proxmox permissions, pfSense aliases, ordered allow rules, and default-deny segmentation.</p></div>
+                  <div><small>RESULT</small><p>A cleaner administrative boundary with tightly scoped access to Proxmox and the upstream gateway.</p></div>
+                </div>
+                <div class="project-stack"><span>Proxmox VE</span><span>pfSense</span><span>VLANs</span><span>RBAC</span></div>
+              </div>
+              <div class="project-visual visual-homelab" aria-hidden="true">
+                <div class="rack">
+                  <div><i></i><span>PVE / 01</span><b>ONLINE</b></div>
+                  <div><i></i><span>PFS / 02</span><b>FILTER</b></div>
+                  <div><i></i><span>LAB / 03</span><b>READY</b></div>
+                  <div><i></i><span>MGMT / 10</span><b>LOCKED</b></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-index"><span>02</span><small>REMOTE ACCESS</small></div>
+              <div class="project-body">
+                <div class="project-meta"><span>VPN</span><span>ACCESS CONTROL</span></div>
+                <h3>WireGuard + Privileged Jumpbox</h3>
+                <p class="project-summary">
+                  Built a secure remote administration path that terminates WireGuard on pfSense
+                  and routes authorized traffic to a dedicated Windows jumpbox—without exposing RDP
+                  directly to the internet.
+                </p>
+                <div class="project-details">
+                  <div><small>FLOW</small><p>Remote client → WireGuard → pfSense → Windows jumpbox → approved management targets.</p></div>
+                  <div><small>CONTROL</small><p>Restricted VPN rules, RDP/NLA hardening, host firewall controls, and management allowlists.</p></div>
+                  <div><small>VALIDATION</small><p>Verified tunnel handshakes, routed reachability, and TCP 3389 connectivity step by step.</p></div>
+                </div>
+                <div class="project-stack"><span>WireGuard</span><span>pfSense</span><span>RDP</span><span>Windows Firewall</span></div>
+              </div>
+              <div class="project-visual visual-vpn" aria-hidden="true">
+                <div class="vpn-orbit orbit-one"></div>
+                <div class="vpn-orbit orbit-two"></div>
+                <div class="vpn-core">WG<span>ENCRYPTED</span></div>
+                <div class="vpn-label label-a">REMOTE</div>
+                <div class="vpn-label label-b">JUMP01</div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-index"><span>03</span><small>IDENTITY SERVICES</small></div>
+              <div class="project-body">
+                <div class="project-meta"><span>WINDOWS SERVER</span><span>DNS</span></div>
+                <h3>Active Directory &amp; DNS Lab</h3>
+                <p class="project-summary">
+                  Deployed a Windows domain lab and worked through the dependencies behind reliable
+                  domain joins: static addressing, AD-integrated DNS, secure dynamic updates, SRV
+                  registration, account separation, and Group Policy.
+                </p>
+                <div class="project-details">
+                  <div><small>DIAGNOSIS</small><p>Used DCDIAG, NSLookup, NLTest, and Netlogon to isolate missing AD DNS records.</p></div>
+                  <div><small>DESIGN</small><p>Separated everyday and administrative identities and kept the built-in account for recovery.</p></div>
+                  <div><small>OPERATIONS</small><p>Planned policies for Defender, firewall, updates, RDP, PowerShell logging, and auditing.</p></div>
+                </div>
+                <div class="project-stack"><span>AD DS</span><span>DNS</span><span>Group Policy</span><span>Windows Server</span></div>
+              </div>
+              <div class="project-visual visual-directory" aria-hidden="true">
+                <div class="directory-root">LAB</div>
+                <span class="tree-line tree-line-main"></span>
+                <div class="directory-level">
+                  <div>USERS</div><div>ADMINS</div><div>SERVERS</div>
+                </div>
+                <div class="directory-status"><i></i> DNS RECORDS REGISTERED</div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-index"><span>04</span><small>AUTOMATION</small></div>
+              <div class="project-body">
+                <div class="project-meta"><span>POWERSHELL</span><span>DIAGNOSTICS</span></div>
+                <h3>Windows Connectivity Diagnostic Toolkit</h3>
+                <p class="project-summary">
+                  Built a reusable PowerShell 5.1 tool outside of work to turn common Windows
+                  connectivity checks into one repeatable workflow with readable and structured reports.
+                </p>
+                <div class="project-details">
+                  <div><small>COVERAGE</small><p>DNS, TCP, proxy, firewall profiles, services, system time, certificates, adapters, routes, and internet access.</p></div>
+                  <div><small>OUTPUT</small><p>Color-coded PASS/WARN/FAIL results with TXT and JSON reports for review or automation.</p></div>
+                  <div><small>DESIGN</small><p>Safe error handling, configurable endpoints, explicit timeouts, and meaningful process exit codes.</p></div>
+                </div>
+                <div class="project-stack"><span>PowerShell 5.1</span><span>JSON</span><span>TLS</span><span>TCP/IP</span></div>
+              </div>
+              <div class="project-visual visual-terminal" aria-hidden="true">
+                <div class="terminal-line"><b>PASS</b><span>DNS resolution</span></div>
+                <div class="terminal-line"><b>PASS</b><span>TCP 443</span></div>
+                <div class="terminal-line warn"><b>WARN</b><span>Certificate age</span></div>
+                <div class="terminal-line"><b>PASS</b><span>Windows services</span></div>
+                <div class="terminal-cursor">PS C:\DIAG&gt;<i></i></div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-index"><span>05</span><small>VALIDATION</small></div>
+              <div class="project-body">
+                <div class="project-meta"><span>NMAP</span><span>FIREWALL</span></div>
+                <h3>External Attack-Surface Review</h3>
+                <p class="project-summary">
+                  Tested the public-facing edge from outside the network and interpreted filtered
+                  TCP results separately from the intentionally forwarded WireGuard UDP service.
+                </p>
+                <div class="project-details">
+                  <div><small>METHOD</small><p>Compared TCP scanning with focused UDP checks to avoid drawing the wrong conclusion from default scans.</p></div>
+                  <div><small>FINDING</small><p>Common TCP ports were silently filtered and RDP was not directly exposed.</p></div>
+                  <div><small>OUTCOME</small><p>Confirmed a deliberately narrow edge: authenticated VPN access instead of public management services.</p></div>
+                </div>
+                <div class="project-stack"><span>Nmap</span><span>UDP</span><span>TCP</span><span>Edge security</span></div>
+              </div>
+              <div class="project-visual visual-scan" aria-hidden="true">
+                <div class="scan-head"><span>PORT</span><span>STATE</span></div>
+                <div><span>22/tcp</span><b>FILTERED</b></div>
+                <div><span>443/tcp</span><b>FILTERED</b></div>
+                <div><span>3389/tcp</span><b>FILTERED</b></div>
+                <div class="scan-accent"><span>VPN/udp</span><b>CONTROLLED</b></div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project-index"><span>06</span><small>TROUBLESHOOTING</small></div>
+              <div class="project-body">
+                <div class="project-meta"><span>POWERSHELL</span><span>LINUX</span><span>PACKETS</span></div>
+                <h3>Wake-on-LAN Packet Automation</h3>
+                <p class="project-summary">
+                  Wrote and tested a PowerShell magic-packet sender for a Proxmox host, then used
+                  tcpdump and ethtool to separate packet-generation issues from NIC and BIOS power-state behavior.
+                </p>
+                <div class="project-details">
+                  <div><small>PACKET</small><p>Generated the standard 102-byte payload and sent it over UDP to the subnet broadcast address.</p></div>
+                  <div><small>PROOF</small><p>Captured traffic on the physical NIC and Linux bridge to validate the complete network path.</p></div>
+                  <div><small>ISOLATION</small><p>Narrowed the remaining fault domain to shutdown-state NIC power and firmware behavior.</p></div>
+                </div>
+                <div class="project-stack"><span>PowerShell</span><span>UDP</span><span>tcpdump</span><span>ethtool</span></div>
+              </div>
+              <div class="project-visual visual-packet" aria-hidden="true">
+                <div class="packet-source">WIN</div>
+                <div class="packet-stream"><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="packet-target">PVE</div>
+                <div class="packet-code">FF × 6 + MAC × 16 <span>102 BYTES</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section architecture-section" id="architecture" aria-labelledby="architecture-title">
+          <div class="architecture-copy">
+            <p class="section-kicker">04 / The lab</p>
+            <h2 id="architecture-title">A safe place to break things carefully.</h2>
+            <p>
+              The environment is designed as a small enterprise playground: virtualization at the
+              core, policy at the edge, identity and services inside, and one controlled path for
+              remote administration.
+            </p>
+            <ul class="architecture-points">
+              <li><span>01</span><div><strong>Segmented by role</strong><p>Home, management, jumpbox, services, and future security workloads are treated as separate trust zones.</p></div></li>
+              <li><span>02</span><div><strong>Managed through policy</strong><p>pfSense rules and Proxmox RBAC define who can reach which services and what they can do.</p></div></li>
+              <li><span>03</span><div><strong>Built for expansion</strong><p>Active Directory, monitoring, backup, automation, and container orchestration fit into a deliberate roadmap.</p></div></li>
+            </ul>
+          </div>
+
+          <div class="architecture-map" aria-label="Homelab architecture diagram">
+            <div class="map-row map-row-edge">
+              <div class="map-node"><small>WAN</small><strong>Internet</strong></div>
+              <span class="map-arrow">→</span>
+              <div class="map-node"><small>EDGE</small><strong>Router</strong></div>
+              <span class="map-arrow">→</span>
+              <div class="map-node map-node-accent"><small>POLICY</small><strong>pfSense</strong></div>
+            </div>
+            <div class="map-spine"></div>
+            <div class="map-zones">
+              <article>
+                <span>ZONE / 01</span>
+                <h3>Management</h3>
+                <p>Proxmox GUI · pfSense admin · SSH</p>
+                <i class="zone-state">RESTRICTED</i>
+              </article>
+              <article>
+                <span>ZONE / 02</span>
+                <h3>Services</h3>
+                <p>DC01 · DNS · Windows · Ubuntu</p>
+                <i class="zone-state">INTERNAL</i>
+              </article>
+              <article>
+                <span>ZONE / 03</span>
+                <h3>Remote access</h3>
+                <p>WireGuard · JUMP01 · RDP</p>
+                <i class="zone-state">ENCRYPTED</i>
+              </article>
+            </div>
+            <div class="map-legend"><span><i></i> ROUTED</span><span><i></i> FILTERED</span><span><i></i> LOGGED</span></div>
+          </div>
+        </section>
+
+        <section class="section roadmap-section" aria-labelledby="roadmap-title">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="section-kicker">05 / Next layer</p>
+              <h2 id="roadmap-title">Always building forward.</h2>
+            </div>
+            <p class="section-note">Planned work that extends the same systems, networking, and security foundation.</p>
+          </div>
+
+          <div class="roadmap-grid">
+            <article><span>UP NEXT</span><h3>Proxmox Backup Server</h3><p>Scheduled retention, verification, and a documented restore test.</p></article>
+            <article><span>PLANNED</span><h3>Centralized monitoring</h3><p>Infrastructure metrics and security events with Grafana, Prometheus, and Wazuh.</p></article>
+            <article><span>EXPLORING</span><h3>Kubernetes on Proxmox</h3><p>A three-node virtual cluster for services, ingress, CNI, and NetworkPolicy practice.</p></article>
+          </div>
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+          <div class="contact-grid"></div>
+          <div class="contact-content">
+            <p class="section-kicker">06 / Contact</p>
+            <h2 id="contact-title">Let's build something reliable.</h2>
+            <p>
+              I'm interested in opportunities where thoughtful troubleshooting, strong fundamentals,
+              and a security-minded approach make infrastructure better.
+            </p>
+            <div class="contact-actions">
+              <!-- REPLACE: Change the email address and profile URLs below. -->
+              <a class="button button-light" href="mailto:jordandigiorgio@protonmail.com">jordandigiorgio@protonmail.com <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://www.linkedin.com/in/jordandigiorgio">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/rc2510-il">GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">J</span>
+          <span class="brand-copy"><strong>JORDAN</strong><small>ENDPOINT SUPPORT · HOME LAB</small></span>
+        </a>
+        <p>Designed with intent. Built with HTML &amp; CSS.</p>
+        <a href="#top">Back to top ↑</a>
+      </footer>
+    </div>
+  </body>
+</html>
